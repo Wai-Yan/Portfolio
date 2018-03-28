@@ -5,8 +5,6 @@ $( document ).ready(function() {
 
   var projectsInfo = "VAYCAYMODE is an application built for the traveller who can't take their mind off of their upcoming vacation. It gives the user a diversion from their every day tasks, and reminds them that better days are to come. It also serves as a planning tool, allowing the user to check the current weather forecast, create packing and to-do lists, and even organize their thoughts as a blog. Proximity: an application built for job searchers looking for new employment with a specified location and radius of that address. The job's the user searches for are based on the recruiter's posting jobs opportunities for job searchers. Designed to use the node.js & express.js for server-side code accessing information contained within mySQL using Sequelize to interact with the front-end user interactions and Heroku displaying the front-end deployment product"
 
-        
-
   $( ".github" ).click(function() {
     window.open("https://github.com/Wai-Yan", '_blank');
   });
