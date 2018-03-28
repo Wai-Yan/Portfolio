@@ -1,0 +1,26 @@
+i {
+  width: 400px;
+  height: 400px;
+}
+
+body {
+    background-color: grey;
+}
+
+#menu {
+  position: relative;
+  top: 25%;
+}
+
+.ui.segment {
+  height: 300px;
+  overflow:scroll;
+  background-color: lightgrey;
+}
+
+.ui.icon.message {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: unset;
+}
