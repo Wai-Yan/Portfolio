@@ -12,6 +12,11 @@ body {
   top: 25%;
 }
 
+#icons {
+  padding-top: 20px;
+  text-align: center;
+}
+
 .ui.segment {
   height: 300px;
   overflow:scroll;
