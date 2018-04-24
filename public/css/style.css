@@ -1,10 +1,14 @@
 i {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
+}
+
+a {
+  color:inherit;
 }
 
 body {
-    background-color: grey;
+  background-color: grey;
 }
 
 #menu {
@@ -17,6 +21,13 @@ body {
   text-align: center;
 }
 
+#info {
+  font-size: medium;
+}
+
+#jumbo {
+  padding: 0;
+}
 .ui.segment {
   height: 300px;
   overflow:scroll;
