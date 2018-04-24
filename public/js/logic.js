@@ -55,17 +55,38 @@ $( document ).ready(function() {
     // Output div
     const $div = $("<div>", {id: "projectDiv"})
 
+    
+    const $vaycay = $("<p>", {id: "vaycay"});
+
+    const $intro = $("<p>", {id: "intro"})
+    $intro.text("CLICK on the project name to be taken to its page!")
+    $vaycay.append($intro);
+
     // Vaycaymode Text
-    const $vaycay = $("<p>", {id: "vaycay"})
-    $vaycay.text("VAYCAYMODE: an application built for the traveller who can't take their mind off of their upcoming vacation. It gives the user a diversion from their every day tasks, and reminds them that better days are to come. It also serves as a planning tool, allowing the user to check the current weather forecast, create packing and to-do lists, and even organize their thoughts as a blog.");
+    var $link = $("<a href='http://vaycaymode.com'>")
+    $link.text("Vaycaymode");
+
+    $vaycay.append($link);
+    $vaycay.append(": an application built for the traveller who can't take their mind off of their upcoming vacation. As a fun diversion, it serves as a planning tool for a user's upcoming vacation, allowing them to check the current weather forecast, create packing and to-do lists, and even organize their thoughts as a blog.");
 
     // Proximity Text
     const $proximity = $("<p>", {id: "proximity"});
-    $proximity.text("Proximity: an application built for job searchers looking for new employment with a specified location and radius of that address. The job's the user searches for are based on the recruiter's posting jobs opportunities for job searchers. Designed to use the node.js & express.js for server-side code accessing information contained within mySQL using Sequelize to interact with the front-end user interactions and Heroku displaying the front-end deployment product");
+
+    $link = $("<a href='https://github.com/angkressin/Proximity'>")
+    $link.text("Proximity");
+
+    $proximity.append($link);
+
+    $proximity.append(": an application built for job searchers looking for new employment within a specified location and radius of that address. Designed with Node.js & Express.js, database powered by MySQL using the Sequelize ORM.");
 
     // BusTrackr Text
     const $trackr = $("<p>", {id: "trackr"});
-    $trackr.text("BusTrackr is an application built for seasoned riders of the WMATA system. It boasts realtime bus updates, estimated time of arrivals at a stop, and a saving function for a user's preferred bus routes and stops")
+
+    $link = $("<a href='https://github.com/Wai-Yan/BusTrakr'>")
+    $link.text("BusTrackr");
+
+    $trackr.append($link);
+    $trackr.append(": an application built for seasoned riders of the WMATA system. It boasts realtime bus updates, estimated time of arrivals at a stop, and a saving function for a user's preferred bus routes and stops")
 
     // Append those paragraphs to output div
     $div.append($vaycay);
