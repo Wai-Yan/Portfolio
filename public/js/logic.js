@@ -1,6 +1,34 @@
 $( document ).ready(function() {
 
-  // Initially set to Bio
+  $( ".item" ).click(function() {
+
+    if (this.className === "active item") {
+      return
+    }
+
+    else {
+
+      switch(this.id) {
+        case "bio":
+          createBio();
+          break;
+
+        case "projects":
+          createProjects();
+          break;
+
+        case "skills":
+          createSkills();
+          break;
+      }
+
+      // Change where the pointer bar is
+      $(this).addClass("active");
+      $(this).siblings().removeClass("active");
+
+    }    
+  });
+
   createBio = () => {
 
     // Output div
@@ -97,33 +125,4 @@ $( document ).ready(function() {
     $("#info").empty();
     $("#info").append($div);
   }
-
-  $( ".item" ).click(function() {
-
-    if (this.className === "active item") {
-      return
-    }
-
-    else {
-
-      // Display corresponding text
-      if (this.id === "bio") {
-        // $("#info").text(bioInfo);
-        createBio();
-      }
-
-      if (this.id === "projects") {
-        createProjects();
-      }
-
-      if (this.id === "skills") {
-        createSkills();
-      }
-
-      // Change where the pointer bar is
-      $(this).addClass("active");
-      $(this).siblings().removeClass("active");
-
-    }    
-  });
 });
